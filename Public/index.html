@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+<link href="https://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet">
+  <link rel="stylesheet" href="Styles/random.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"> </script>
+  <title>Chat</title>
+</head>
+<body>
+
+
+<div class="status">Status: <span id="afk">Nobody likes you</span> </div>
+  <div class="chatwrap">
+
+        <input  class="chatname" type="text"  placeholder="Enter Your Name"/>
+      <div class="chatmsg"></div>
+
+          <textarea class="txtarea"  type="text" placeholder="Enter your Message"></textarea>
+        <button id="send">Send</button>
+
+
+  </div>
+
+<div class="colors"><p>Choose Chat Background Color:</p><img id="red"src="Pics/red.jpg"> <img id="blue"src="Pics/blue.jpg">
+<img id="orange" src="Pics/orange.jpg"> <img id="green" src="Pics/green.jpg"></div>
+
+
+
+<script type="text/javascript" src="/chat.js"> </script>
+</body>
+</html>
