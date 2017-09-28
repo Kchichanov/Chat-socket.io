@@ -3,7 +3,7 @@ const socket = require("socket.io");
 const express = require("express");
 const mongoose = require('mongoose');
 const bodyParser = require("body-parser");
-mongoose.connect("mongodb://test:test@ds143744.mlab.com:43744/test-koco",function(err){
+mongoose.connect(/*"ADD DATABASE HERE"*/,function(err){
   if (err) throw err;
   useMongoClient=true;
 
