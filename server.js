@@ -3,7 +3,7 @@ const socket = require("socket.io");
 const express = require("express");
 const mongoose = require('mongoose');
 const bodyParser = require("body-parser");
-mongoose.connect(/*"ADD DATABASE HERE"*/,function(err){
+  mongoose.connect(/*"ADD DATABASE HERE"*/ ,function(err){
   if (err) throw err;
   useMongoClient=true;
 
@@ -14,7 +14,6 @@ var Cschema = new mongoose.Schema({name:String,
 message:String
 });
 const Cmodel = mongoose.model("Cmodel", Cschema)
-
 
 // server listen
 const app = express();
